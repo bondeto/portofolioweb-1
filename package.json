@@ -1,0 +1,50 @@
+{
+  "name": "professional-portfolio",
+  "version": "2.0.0",
+  "description": "Professional portfolio website with modern design and full-stack functionality",
+  "main": "server.js",
+  "author": "John Doe <john.doe@example.com>",
+  "license": "MIT",
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "full-stack",
+    "javascript",
+    "node.js",
+    "express",
+    "sqlite"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "build": "echo 'No build step required for this project'",
+    "test": "echo 'Tests not implemented yet'",
+    "lint": "echo 'Linting not configured yet'",
+    "clean": "rm -f portfolio.db",
+    "reset-db": "npm run clean && npm start"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "professional-portfolio": "file:",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johndoe/professional-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johndoe/professional-portfolio/issues"
+  },
+  "homepage": "https://johndoe-portfolio.com"
+}
